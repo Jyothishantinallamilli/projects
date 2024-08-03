@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/248693c12a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image2.png" alt="" width="300" height="100"class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <div>
+                <h1>Hi,I'm <span>Jyothishanti</span><br>Nallamilli</h1>
+                <img src="file1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image3.png" alt="" class="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="decrease">I am a dedicated and quick learner with a strong interest in Front-End Development. I thrive in working on creating intuitive and visually appealing user interfaces</p>
+                    <div class="tab-titles">
+                       <p class="tab-links active-links" onclick="opentab('education')">Education</p>
+                       <p class="tab-links "onclick="opentab('skills')">Skills</p>
+                       <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span >2021 - 2025</span><br><br>B.TECH From Sagi Ramakrishnam Raju Engineering College<br>8.89 Cgpa</li>
+                            <li><span>2019 - 2021</span><br><br>Intemediate from Sri Chaitanya Junior College<br>97.9%</li>
+                            <li><span>2018 - 2019</span><br><br>10th From Sri Chaitanya Techno School<br>100%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span >Programing Language</span><br><br>Skilled in Java</li>
+                            <li><span>Front-End Development</span><br><br>HTML5, CSS3, JavaScript</li>
+                            <li><span>Version Control</span><br><br>Git & Github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2024 - current</span><br><br>Intern at IIDT, working in the role of Full Stack Development</li>
+                            <li><span>March 2024 - April 2024</span><br><br>participated in the Excelr program where I learned Git and GitHub</li>
+                            <li><span>Jul 2023 - Sep 2023</span><br><br>Intern at  Henotic Technology Pvt Ltd,focused on DSA using Java </li>
+                            
+                        </ul>
+                    </div>
+                    
+
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div id="work">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <h2>OTP Generator</h2>
+                    <p>You will have a Generate button through which you can generate the unique OTP of 
+                        6 characters.
+                    </p>
+                    <a href="https://otp-generate.netlify.app/">show</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-barcode"></i>
+                    <h2>Barcode Generator</h2>
+                    <p>You will have a Barcode Generate button ,you can enter any text and you will see corresponding 
+                        barcode for the entered text.
+                    </p>
+                    <a href="https://zippy-sundae-26fa85.netlify.app/">show</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-calculator"></i>
+                    <h2>Calculator</h2>
+                    <p>You can perform any arithmetic operations that we perform in normal calculator.
+                        It gives the exact result that you see in normal calculator.
+                    </p>
+                    <a href="https://j-s-n-calculator.netlify.app/">show</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nallamillijyothishanti@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9154216169</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jyothi-shanti-nallamilli-207860266/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Jyothishantinallamilli/DSA"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.naukri.com/code360/profile/c16fabdd-3971-4baa-b512-26f8a87259b7"><img src="https://files.codingninjas.in/frame-1000001280-1707481189.svg" alt=""></a>
+                    </div>
+                    <a href="Jyothishanti Nallamilli.pdf" download class="btn" >
+                        Download Resume
+                    </a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <script src="script.js"></script>
+ <script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbyS5RMRBtFeipbjUIb3Lqu-jlV2zn-hiObCX04dcMQT4fBl5QLxO2TWPTQq0t4PerMn/exec'
+       const form = document.forms['submit-to-google-sheet']
+       const msg=document.getElementById("msg");
+   
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+           .then(response => {
+               msg.innerHTML='<i class="fa-regular fa-circle-check"> </i>Message sent Successfully';
+            setTimeout(function(){
+                msg.innerHTML="";
+            },1000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+      })
+  </script>
+</body>
+</html>
